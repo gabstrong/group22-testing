@@ -5,14 +5,13 @@
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
+ 
   <body>
     <header>
       <nav>
         <h3>🎱Group - 22</h3>
       </nav>
-      <div class="group-list">
         <div class="left">
           <h1>
             Two heads are better <br />
@@ -32,5 +31,54 @@
         </div>
       </div>
     </header>
+
+
+    <section class="form-section">
+      <div class="pics">
+        <div class="side-earth">
+          <img src="image/Image_header.png">
+        </div>
+        <div class="left-logo">
+          <img src="image/mainissytechlogo.png" >
+        </div>
+      </div>
+      
+      <h2>JOIN OUR GROUP</h2>
+      <p>Fill in your details to get started.</p>
+      
+      <form>
+        <div class="form-container">
+          <div class="field">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="e.g. peters israel" required>
+          </div>
+          
+          <div class="field">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="e.g. peters@gmail.com" required>
+          </div>    
+
+          <div class="field">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" placeholder="********" required>
+          </div>    
+
+          <div class="field">
+            <label for="contact">Phone Number:</label>
+            <input type="tel" id="contact" name="contact" placeholder="11 characters" minlength="11" required>
+          </div>
+          <div class="field">
+            <label for="textarea">About:</label>
+            <textarea id="message" name="message" rows="5" cols="40" placeholder="Tell us more about you..."></textarea>
+          </div>
+          
+            
+            <button class="last-button" type="submit">Submit</button>
+        </div>
+
+    </form>
+
+
+    </section>
   </body>
 </html>
