@@ -2,16 +2,104 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Group - 22 testing</h1>
-    <ul>
-      <li>Freedom Gabriel</li>
-      <li class="ken">Faola Kehinde Israel</li>
-    </ul>
-    <h2>TESTING</h2>
+    <header>
+      <nav>
+        <h3>🎱Group - 22</h3>
+      </nav>
+      <div class="group-list">
+        <h1>Group - 22 testing</h1>
+        <ul>
+          <li>Freedom Gabriel</li>
+          <li>Faola Kehinde Israel</li>
+        </ul>
+        <button class="btn">Click me</button>
+        <h2>TESTING</h2>
+      </div>
+    </header>
+
+
+    <form>
+        <fieldset>
+            <legend>Student Registration Form</legend>
+            
+            <label for="name">Full Name:</label>
+            
+            <input type="text" id="name" name="name" placeholder="e.g. peters israel" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="e.g. peters@gmail.com" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" placeholder="********" required>
+            
+            <label for="gender">Gender:</label>
+            <div class="gen">
+                <input type="radio" name="gender" value="male">
+                <span><label for="gender-male">Male</label></span>
+                <input type="radio" name="gender" value="female">
+                <span><label for="gender-female">Female</label></span>
+                <input type="radio" name="gender" value="other">
+                <span><label for="gender-other">Other</label></span>
+            </div>
+            
+            <label for="skills">Skills or Interests:</label>
+
+            <div>
+                <input type="checkbox" name="skill" value="HTML">
+                <span><label for="skill-html">HTML</label></span>
+                <input type="checkbox" name="skill" value="css">
+                <span><label for="skill-css">CSS</label></span>
+                <input type="checkbox" name="skill" value="javascript">
+                <span><label for="skill-javascript">Javascript</label></span>
+            </div>
+            
+            <label for="date">Date Of Birth:</label>
+            <input class="dob" type="date" id="date" name="date" required>
+            <br>
+            <label for="contact">Phone Number:</label>
+            <div class="input">
+                <input type="tel" id="contact" name="contact" placeholder="11 characters" minlength="11" required>
+            </div>
+            
+
+            <div class="city">
+                <label for="city-select">City:</label><br>
+                            <select id="city-select" name="city" required>
+                                <option value="">Choose city</option>
+                                <optgroup label="Ogun">
+                                    <option value="abk">Abeokuta</option>
+                                    <option value="sagamu">Sagamu</option>
+                                    <option value="ifo">Ifo</option>
+                                    <option value="itori">Itori</option>
+                                    <option value="ibafo">Ibafo</option>
+                                    <option value="ijebu">Ijebu Ode</option>
+                                    <option value="mowe">Mowe</option>
+                                    <option value="owode">Owode</option>
+                                    <option value="ilaro">Ilaro</option>
+                                    <option value="sango">Sango Ota</option>
+                                </optgroup>
+                                <optgroup label="Lagos">
+                                    <option value="ikeja">Ikeja</option>
+                                    <option value="lekki">Lekki</option>
+                                    <option value="oshodi">Oshodi</option>
+                                    <option value="agege">Agege</option>
+                                    <option value="marina">Marina</option>
+                                </optgroup>
+                            </select><br>
+                        </div>
+            <label for="textarea">About:</label>
+            
+                <textarea id="message" name="message" rows="5" cols="40" placeholder="Tell us more about you..."></textarea>
+            
+            <button type="submit">Submit</button>
+        </fieldset>
+
+    </form>
+    
   </body>
 </html>
