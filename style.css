@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  overflow-x: hidden;
+}
 header {
   background-color: white;
   color: brown;
@@ -57,7 +59,7 @@ header {
       justify-content: center;
       flex-direction: column;
 
-      img {
+      .firstpic {
         width: 450px;
         height: 450px;
       }
@@ -82,37 +84,35 @@ header {
   }
 }
 
-
-
-
-.form-section{
-  font-family:Arial, Helvetica, sans-serif;
+.form-section {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: lightskyblue;
   padding: 50px 20px 50px 20px;
-  
-  h2{
+
+  h2 {
     text-align: center;
     margin-bottom: 10px;
     font-size: 40px;
     color: blue;
-    text-shadow: 3px 3px red, -3px -3px 3px green;
+    text-shadow:
+      3px 3px red,
+      -3px -3px 3px green;
   }
-  p{
+  p {
     text-align: center;
     margin-bottom: 30px;
     color: white;
     font-weight: bold;
-    
   }
-  img{
+  img {
     width: 200px;
     object-fit: cover;
   }
 }
-.side-earth{
+.side-earth {
   float: right;
 }
-.last-button{
+.last-button {
   margin: 20px;
   margin-top: 40px;
   padding: 10px;
@@ -122,58 +122,58 @@ header {
   background-color: blue;
   color: white;
 }
-.last-button:hover{
+.last-button:hover {
   cursor: pointer;
   color: lawngreen;
   font-size: larger;
   transition: 2s;
 }
 
-.form-container{
+.form-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
-input, textarea{
+input,
+textarea {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  
 }
-label{
-  font-weight:bold;
+label {
+  font-weight: bold;
 }
-.field{
+.field {
   display: flex;
   flex-direction: column;
 }
 
-@media (max-width: 768px){
-  .left-logo{
+@media (max-width: 768px) {
+  .left-logo {
     display: flex;
     justify-content: center;
   }
-  .side-earth{
-    float:none;
+  .side-earth {
+    float: none;
     display: flex;
     justify-content: center;
   }
-  .form-container{
-  display: grid;
-  grid-template-columns: 1fr ;
-  gap: 30px;
-  justify-items: center;
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-items: center;
   }
-  input, textarea{
+  input,
+  textarea {
     width: 100%;
   }
-  .pics{
+  .pics {
     display: flex;
     flex-direction: column-reverse;
   }
-  textarea{
+  textarea {
     width: 185px;
   }
-
 }
