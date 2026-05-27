@@ -4,10 +4,11 @@
 }
 
 header {
-  background-color: whitesmoke;
+  background-color: white;
   color: brown;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
   /* display: flex;
   flex-direction: column;
   justify-content: center; */
@@ -15,23 +16,57 @@ header {
   nav {
     width: 100%;
     height: 10%;
-    background-color: aqua;
+    background-color: blue;
+    color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: first baseline;
     align-items: center;
     font-size: 1.5rem;
+    padding-left: 30px;
   }
 
   .group-list {
     width: 100%;
     height: 90%;
+    /* background-color: red; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 10px 50px;
+
+    .left {
+      width: 50%;
+      height: 60%;
+      /* background-color: red; */
+      display: flex;
+      align-items: first baseline;
+      justify-content: center;
+      flex-direction: column;
+      padding-left: 80px;
+      color: blue;
+      /* border-radius: 10px; */
+      border-left: 10px solid lightblue;
+    }
+    .right {
+      width: 50%;
+      height: 100%;
+      /* background-color: yellow; */
+      display: flex;
+      align-items: first baseline;
+      justify-content: center;
+      flex-direction: column;
+
+      img {
+        width: 450px;
+        height: 450px;
+      }
+    }
 
     h1 {
       margin-bottom: 20px;
+      font-size: 50px;
+      font-family: "Times New Roman", Times, serif;
     }
     ul li {
       margin-bottom: 10px;
@@ -39,25 +74,10 @@ header {
     .btn {
       margin-top: 20px;
       padding: 10px 20px;
-      background-color: brown;
+      background-color: blue;
       color: white;
       border: none;
       cursor: pointer;
     }
   }
 }
-
-h2{
-  padding: 50px;
-  margin-top: 30px;
-  font-size:3rem;
-  color: red;
-}
-h2:hover{
-  font-size: 4rem;
-  transition-duration: 2s;
-  color:aqua;
-  background-color:blueviolet;
-  border-radius: 40px;
-}
-
