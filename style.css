@@ -76,6 +76,21 @@ span {
 }
 .names li {
   margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.names li::after {
+  content: "";
+  width: 0px;
+  height: 4px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.9s;
+}
+.names li:hover::after {
+  width: 90px;
 }
 .btn {
   margin-top: 20px;
@@ -115,6 +130,7 @@ i {
   }
 }
 
+/* mobile view display */
 /* iPhone Plus/Pro Max */
 @media (max-width: 414px) {
   .header {
@@ -129,6 +145,7 @@ i {
   }
   h1 {
     font-size: 50px;
+    /* color: aqua; */
   }
   .names {
     display: flex;
@@ -160,5 +177,73 @@ i {
   }
   .hamburger-menu i {
     font-size: 50px;
+  }
+  .names li::after {
+    left: 80px;
+  }
+  .names li:hover::after {
+    width: 90px;
+  }
+}
+
+/* mobile view display */
+
+@media (max-width: 584px) {
+  .header {
+    position: relative;
+  }
+  .main {
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    align-items: center;
+    padding-left: 0px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .names {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    position: fixed;
+    top: 10%;
+    left: 0px;
+    width: 0%;
+    height: 90%;
+    overflow: hidden;
+    transition: 0.9s;
+    z-index: 100;
+  }
+  .active {
+    width: 70%;
+  }
+  .hamburger-menu {
+    display: block;
+    margin-right: 50px;
+    font-size: 80px;
+    cursor: pointer;
+  }
+  .hamburger-menu i {
+    font-size: 50px;
+  }
+  .names li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+  }
+  .names li::after {
+    position: absolute;
+    left: 50px;
+  }
+  .names li:hover::after {
+    width: 70px;
   }
 }
